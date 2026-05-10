@@ -1,0 +1,41 @@
+[
+    {
+        "tag": "salutation",
+        "patterns": ["bonjour", "salut", "hello"],
+        "responses": [
+            "Bonjour ! Comment puis-je t'aider concernant l'EFREI ?",
+            "Salut ! Tu as une question sur l'EFREI ?"
+        ]
+    },
+    {
+        "tag": "easter egg",
+        "patterns":["salam kho"],
+        "responses":[
+            "salam mon frere, longue vie a toi !"
+        ]
+    },
+    {
+        "tag": "formations",
+        "patterns": ["formation", "programme", "cours"],
+        "responses": [
+            "L'EFREI propose des formations en informatique, cybersécurité et data.",
+            "Tu peux suivre des cursus en développement, IA ou réseaux à l'EFREI."
+        ]
+    },
+    {
+        "tag": "admission",
+        "patterns": ["admission", "inscription", "postuler"],
+        "responses": [
+            "Les admissions se font via Parcoursup ou concours.",
+            "Tu peux postuler à l'EFREI via leur plateforme d'admission."
+        ]
+    },
+    {
+        "tag": "localisation",
+        "patterns": ["ou", "adresse", "localisation"],
+        "responses": [
+            "L'EFREI est située à Villejuif près de Paris.",
+            "Le campus principal est en Île-de-France."
+        ]
+    }
+]

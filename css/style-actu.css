@@ -1,0 +1,76 @@
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-row {
+    display: flex;
+    background: white;
+    border: 1px solid #bcc4dc;
+}
+
+.news-date {
+    background-color: #1c236e;
+    color: white;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* La zone de texte à droite */
+.news-content {
+    padding: 25px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Le badge de catégorie */
+.news-tag {
+    background-color: #e8ebf5;
+    border: 1px solid #bcc4dc;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+/* Couleurs spécifiques pour le texte des badges */
+.tag-blue {
+    color: #1c236e;
+}
+
+.tag-green {
+    color: #00695c;
+}
+
+.tag-orange {
+    color: #d84315;
+}
+
+/* Titre et description de l'actu */
+.news-content h3 {
+    font-size: 1.2rem;
+    color: #111;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.news-content p {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 0;
+}

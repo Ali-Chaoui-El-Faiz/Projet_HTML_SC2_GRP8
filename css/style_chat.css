@@ -1,0 +1,112 @@
+/* Chatbot  */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 350px;
+    max-width: 90vw;
+    background: #0A316C;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-popup.show {
+    display: flex;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #051A3A;
+    color: #FFFFFF;
+}
+
+.chat-header h4 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.chat-header button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.chat-window {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    height: 250px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* messages */
+.message {
+    padding: 10px 14px;
+    border-radius: 8px;
+    max-width: 75%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+/* utilisateur */
+.user {
+    align-self: flex-end;
+    background: #81ECEC;
+    color: #0A316C;
+}
+
+/* bot */
+.bot {
+    align-self: flex-start;
+    background: #FFFFFF;
+    color: #0A316C;
+}
+
+/* barre input */
+.input-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.input-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.input-bar button {
+    background: #4883db;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url('../img/fleche-droite.png');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-bar button:hover {
+    background: #81ECEC;
+}

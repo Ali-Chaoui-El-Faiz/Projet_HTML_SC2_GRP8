@@ -1,0 +1,285 @@
+/* ── Variables charte  */
+:root {
+    --bleu: #0A316C;
+    --blanc: #FFFFFF;
+    --cyan: #81ECEC;
+    --jaune: #FDCB6E;
+    --bleu-hover: #0d3d87;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ── Reset de base  */
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background: var(--blanc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ── HEADER  */
+header {
+    background: var(--bleu);
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--blanc);
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    gap: 1.75rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--blanc);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity .2s, color .2s;
+}
+
+nav a:hover,nav a.active {
+    opacity: 1;
+    color: var(--cyan);
+}
+
+/* ── HERO — composition diagonale */
+.hero {
+    position: relative;
+    background: var(--bleu);
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 0px;
+}
+
+/* séparation droite (rechercher sur forum) */
+.hero::after {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: rgba(129, 236, 236, 0.07);
+    clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Reflet cyan  */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(129, 236, 236, .18) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-right: 200px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
+/* Bouton outline bordure Cyan */
+.btn-outline {
+    background: transparent;
+    color: var(--blanc);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .65rem 1.4rem;
+    border: 2px solid var(--cyan);
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background .2s, color .2s, transform .15s;
+}
+
+.btn-outline:hover {
+    background: var(--cyan);
+    color: var(--bleu);
+    transform: translateY(-2px);
+}
+
+/* ── STATS  */
+.stats {
+    background: var(--bleu);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+.stat-item {
+    flex: 1 1 160px;
+    text-align: center;
+    padding: 1.75rem 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--cyan);
+    line-height: 1.2;
+}
+
+.stat-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, .75);
+    margin-top: .35rem;
+}
+
+/* ── FOOTER  */
+footer {
+    background-color: #051A3A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* Conteneur global */
+.events-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Style de la carte */
+.event-card {
+    background-color: #1a355b;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Textes */
+.event-date {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.event-info {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.event-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* L'image au centre */
+.event-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Le bouton d'inscription */
+.event-btn {
+    background-color: #f2279b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.event-btn:hover {
+    background-color: #d11e84;
+    transform: translateY(-2px);
+}

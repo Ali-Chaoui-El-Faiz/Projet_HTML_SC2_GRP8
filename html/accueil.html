@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style_general.css">
+    <link rel="stylesheet" href="../css/style_carroussel.css">
+    <link rel="stylesheet" href="../css/style_chat.css">
+    <link rel="stylesheet" href="../css/style-formation.css">
+    <title>EFREI - Informatique</title>
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <img src="../img/Logo-Efrei-Blanc-scaled.png" alt="Logo EFREI" style="height: 170px; width: auto;">
+        </div>
+        <nav>
+            <a href="./accueil.html" class="active">Accueil</a>
+            <a href="./campus.html">Vie Étudiante / Campus</a>
+            <a href="./equipe.html">Équipe</a>
+            <a href="./contact.html">Admission / Contact</a>
+            <a href="./a-propos.html">A propos</a>
+        </nav>
+    </header>
+
+    <section class="hero" style="flex-wrap: wrap; justify-content: center;">
+
+        <!-- Texte et bouton isolés à gauche -->
+        <div class="hero-content" style="margin: 2rem 4rem; flex: 1; min-width: 300px;">
+            <h2>Façonner les ingénieurs et experts du numérique de demain</h2>
+            <p>Bienvenue au Département Informatique de l'EFREI</p>
+            <div class="buttons" style="margin: 0; margin-top: 1.5rem;">
+                <a href="#nos-formations" class="btn btn-outline">Formations</a>
+                <a href="#actualites" class="btn btn-outline">Actualités</a>
+                <button id="chat-toggle" class="btn btn-outline">Des questions ?</button>
+            </div>
+        </div>
+
+        <!-- Carrousel isolé à droite -->
+        <section class="news-section" style="flex: 1; min-width: 350px; padding: 2rem;">
+            <div class="carousel" id="mainCarousel">
+
+                <button class="carousel-btn carousel-btn--prev" id="prevBtn" aria-label="Image précédente">
+                </button>
+
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+
+                        <div class="carousel-slide active">
+                            <div class="image-placeholder">
+                                <img src="../img/img_accueil.png" alt="Hackathon">
+                            </div>
+                            <div class="news-card">
+                                <h3>Hackathon IA 2025</h3>
+                                <p>Les étudiants EFREI primés au concours national d'intelligence artificielle.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="image-placeholder">
+                                <img src="../img/img_accueil2.jpg" alt="Conférence">
+                            </div>
+                            <div class="news-card">
+                                <h3>Conférence Data 2025</h3>
+                                <p>Retour sur la grande conférence annuelle dédiée à la science des données.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="image-placeholder">
+                                <img src="../img/img_accueil3.jpg" alt="Remise de diplômes">
+                            </div>
+                            <div class="news-card">
+                                <h3>Remise de diplômes</h3>
+                                <p>Félicitations à la promotion 2025 lors de la cérémonie de fin d'année.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide">
+                            <div class="image-placeholder">
+                                <img src="../img/img_accueil4.jpg" alt="Partenariats">
+                            </div>
+                            <div class="news-card">
+                                <h3>Nouveaux Partenariats</h3>
+                                <p>L'EFREI signe des accords avec 5 entreprises leaders du secteur numérique.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn--next" id="nextBtn" aria-label="Image suivante"></button>
+                <div class="carousel-dots" id="carouselDots"></div>
+
+            </div>
+        </section>
+
+        <script src="../js/carousel.js"></script>
+    </section>
+
+    <!-- Fenêtre du Chatbot -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <h4>Chatbot EFREI</h4>
+            <button id="chatClose" title="Fermer">-</button>
+        </div>
+        <div class="chat-window">
+            <div class="input-bar">
+                <input type="text" id="chatInput" placeholder="Posez vos questions">
+                <button id="chatSend" title="Envoyer"></button>
+            </div>
+        </div>
+    </div>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h3>12+</h3>
+            <p>Formations</p>
+        </div>
+        <div class="stat-item">
+            <h3>60+</h3>
+            <p>Enseignants</p>
+        </div>
+        <div class="stat-item">
+            <h3>1500+</h3>
+            <p>Étudiants</p>
+        </div>
+        <div class="stat-item">
+            <h3>50+</h3>
+            <p>Partenaires</p>
+        </div>
+    </section>
+
+
+    <main id="nos-formations" style="background-color: #f4f5f7; padding: 60px 0;">
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <h3 class="section-title"
+                style="display: block; text-align: center; font-size: 2.2rem; color: #FFFFFF; background-color: #0A316C; padding: 15px 100px; border-radius: 8px; margin-bottom: 50px;">
+                Nos Formations</h3>
+            <p>Notre cycle forme des experts capables de relever les défis de demain. L'objectif pédagogique est double : vous apporter une <strong>expertise technique</strong> de pointe tout en développant vos compétences en <strong>gestion de projet</strong> et en <strong>innovation</strong>.</p>
+            <br>
+        </div>
+        <div class="container" style="padding-top: 0; padding-bottom: 0;">
+            <div class="section-title">
+                <h2>Bachelors (Post-Bac)</h2>
+            </div>
+
+            <div class="cards-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="card">
+                    <h3>Informatique – Grade de licence</h3>
+                    <p><strong>Objectifs :</strong> Maîtriser les fondements de l'informatique et du développement.</p>
+                    <p><strong>Programme :</strong> Développement Web et Mobile, Bases de données, Systèmes et Réseaux.
+                    </p>
+                    <div class="tags">
+                        <span>Initiale / Alternance</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Cybersécurité & Réseaux</h3>
+                    <p><strong>Objectifs :</strong> Sécuriser les infrastructures et contrer les menaces numériques.</p>
+                    <p><strong>Programme :</strong> Cryptographie, Sécurité offensive/défensive, Administration Réseaux.
+                    </p>
+                    <div class="tags">
+                        <span>Initiale / Alternance</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Développeur Web - IA</h3>
+                    <p><strong>Objectifs :</strong> Concevoir des applications intelligentes et modernes.</p>
+                    <p><strong>Programme :</strong> IA et Machine Learning, Développement Front/Back-end.</p>
+                    <div class="tags">
+                        <span>Initiale / Alternance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ingenieur-section">
+                <div class="ingenieur-content">
+                    <h2>Cycle Ingénieur & Mastère</h2>
+                    <p>Focus pointu sur les technologies de votre majeure. Le cycle est validé par des <strong>stages en
+                            entreprise</strong> réguliers et se clôture par un <strong>Projet de fin d'études
+                            (PFE)</strong> en immersion professionnelle totale.</p>
+
+                    <h3 style="margin-top: 30px; font-size: 20px;">Filières et Majeures :</h3>
+                    <ul class="charter-list">
+                        <li>Information Technology (Logiciels et SI)</li>
+                        <li>Data Science (Big Data et IA)</li>
+                        <li>Sécurité et Réseaux (Cybersécurité)</li>
+                        <li>Systèmes Embarqués (IoT et Robotique)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="actualites" class="container" style="padding-top: 60px; padding-bottom: 0;">
+        <h3 class="section-title"
+                style="display: block; text-align: center; font-size: 2.2rem; color: #FFFFFF; background-color: #0A316C; padding: 15px 500px; border-radius: 8px; margin-bottom: 50px;">
+                Actualités</h3>
+    </div>
+
+    <div class="events-container" style="padding-top: 0;">
+
+        <div class="event-card">
+            <div class="event-date">08 mai. 26</div>
+            <div class="event-info">De 9h00 à 13h00 | Villejuif</div>
+            <h3 class="event-title">Journée portes ouvertes</h3>
+            <img src="https://objectif-ast.fr/wp-content/uploads/2024/06/Efrei-plan-strategique.png"
+                alt="Campus Villejuif" class="event-img">
+            <a href="./contact.html" class="event-btn">S'inscrire</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">06 juin. 26</div>
+            <div class="event-info">De 9h30 à 13h00 | Bordeaux</div>
+            <h3 class="event-title">Journées portes ouvertes</h3>
+            <img src="https://objectif-ast.fr/wp-content/uploads/2024/06/Efrei-plan-strategique.png"
+                alt="Campus Bordeaux" class="event-img">
+            <a href="./contact.html" class="event-btn">S'inscrire</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">06 juin. 26</div>
+            <div class="event-info">De 9h30 à 14h00 | Villejuif</div>
+            <h3 class="event-title">Journée portes ouvertes</h3>
+            <img src="https://objectif-ast.fr/wp-content/uploads/2024/06/Efrei-plan-strategique.png"
+                alt="Campus Villejuif" class="event-img">
+            <a href="./contact.html" class="event-btn">S'inscrire</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">01 juil. 26</div>
+            <div class="event-info">De 17h00 à 20h00 | Bordeaux</div>
+            <h3 class="event-title">Soirée portes ouvertes</h3>
+            <img src="https://objectif-ast.fr/wp-content/uploads/2024/06/Efrei-plan-strategique.png"
+                alt="Campus Bordeaux" class="event-img">
+            <a href="./contact.html" class="event-btn">S'inscrire</a>
+        </div>
+
+    </div>
+
+    <script src="../js/chatbot.js"></script>
+    <footer>
+        <p>© 2026 Efrei - Informatique</p>
+        <div style="margin-top: 15px;">
+            <a href="./a-propos.html" class="btn-outline" style="display: inline-block;">À propos</a>
+        </div>
+    </footer>
+</body>
+
+</html>

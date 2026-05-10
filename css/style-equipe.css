@@ -1,0 +1,209 @@
+
+/* Grille à 4 colonnes pour l'équipe */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Design de la carte prof */
+/* La carte avec de l'ombre et la bordure en bas */
+.team-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 15px rgba(10, 49, 108, 0.08);
+    border-bottom: 4px solid var(--bleu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    border-bottom-color: var(--cyan);
+}
+
+/* Le rond pour la photo */
+.photo-wrapper {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--bleu);
+}
+
+.photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Les textes */
+.team-card h3 {
+    margin: 0 0 5px 0;
+    color: var(--bleu);
+}
+
+.role {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--bleu);
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* tags de compétences */
+.tags-container {
+    margin-top: auto;
+}
+
+.skill-tag {
+    background-color: rgba(129, 236, 236, 0.15);
+    color: var(--bleu);
+    border: 1px solid var(--cyan);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ---- TITRE DE LA PAGE --- */
+.page-title-section {
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+    background-color: #f4f5f7;
+}
+
+.page-title-section h2 {
+    color: #0A316C;
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.page-title-section p {
+    color: #555;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/*  SECTION EXPERTISE (Fond Bleu )  */
+.expertise-section {
+    background-color: #0A316C;
+    color: #FFFFFF;
+    padding: 70px 20px;
+    text-align: center;
+    border-top: 5px solid #FDCB6E;
+}
+
+.expertise-section h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.expertise-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(129, 236, 236, 0.3);
+    padding: 30px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    background: rgba(129, 236, 236, 0.1);
+    border-color: #81ECEC;
+}
+
+.expertise-card h3 {
+    color: #81ECEC;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.expertise-card p {
+    color: #e0e6ed;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --- SECTION PUBLICATIONS ET PROJETS --- */
+.research-projects-section {
+    padding: 70px 20px;
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-dark-title {
+    color: #0A316C;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-item {
+    display: flex;
+    align-items: flex-start;
+    background: #f4f5f7;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #0A316C;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(10, 49, 108, 0.1);
+    border-left-color: #81ECEC;
+}
+
+.project-icon {
+    color: #81ECEC;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+.project-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0A316C;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.project-content p {
+    color: #555;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}

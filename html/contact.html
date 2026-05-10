@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style_general.css">
+    <link rel="stylesheet" href="../css/style-contact.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style_chat.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EFREI - Informatique</h1>
+        <nav>
+            <a href="./accueil.html">Accueil</a>
+            <a href="./campus.html">Vie Étudiante / Campus</a>
+            <a href="./equipe.html">Équipe</a>
+            <a href="./contact.html" class="active">Admission / Contact</a>
+            <a href="./a-propos.html">A propos</a>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <div class="page-title-section contact-hero">
+            <h2>Contact & Admissions</h2>
+        </div>
+
+        <div class="contact-container">
+            <h3 class="section-title">Procédures d'admission</h3>
+            <div class="grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 10px;">
+                <div class="card">
+                    <div class="card-header light-blue">-- Post-Bac</div>
+                    <div class="card-body">
+                        <p class="card-desc">L'inscription se fait via <strong>Parcoursup</strong>. L'admission passe
+                            par le <strong>Concours Puissance Alpha</strong>, qui comprend une étude de ton dossier et
+                            des épreuves écrites.</p>
+                    </div>
+                </div><br>
+                <div class="card">
+                    <div class="card-header green">-- Admissions Parallèles</div>
+                    <div class="card-body">
+                        <p class="card-desc">Tu as un BTS, BUT, Licence ou tu viens de prépa ? Tu peux nous rejoindre en
+                            admission sur titre. Il suffit de déposer un dossier en ligne, suivi d'un entretien de
+                            motivation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-title" style="margin-top: 30px;"> Foire Aux Questions (FAQ)</h3>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Où puis-je trouver le détail des programmes ?</h4>
+                    <p>Toutes nos spécialisations (Génie Logiciel, IA, Cyber...) sont détaillées sur la page <a
+                            href="formations.html" style="color: #1c236e; font-weight: bold;">Formations</a>.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Quel est le coût de la scolarité ?</h4>
+                    <p>Les frais dépendent de l'année d'étude. <strong>Bonne nouvelle :</strong> l'alternance
+                        (disponible en Master) permet de faire financer à 100% tes frais de scolarité par ton
+                        entreprise, tout en étant rémunéré !</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Comment est l'ambiance sur le campus ?</h4>
+                    <p>Très animée ! Entre les labs flambant neufs, les espaces de coworking et nos dizaines
+                        d'associations (E-sport, robotique, dev...), tu trouveras vite ta place.</p>
+                </div>
+
+            </div>
+
+            <!-- Bouton Chatbot  -->
+            <div style="grid-column: 1 / -1; text-align: center; margin-top: 10px; margin-bottom: 40px;">
+                <button id="chat-toggle" class="btn-outline-blue">Des questions ?</button>
+            </div>
+
+            <div class="contact-card form-section">
+                <h3>Formulaire de contact</h3>
+                <form action="../html/contact.html" method="GET" onsubmit="alert('Votre message a bien été envoyé !');">
+                    <div class="form-group">
+                        <label for="nom">Nom *</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sujet">Sujet *</label>
+                        <input type="text" id="sujet" name="sujet" placeholder="Objet de votre message" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Envoyer ➔</button>
+                </form>
+            </div>
+
+            <div class="contact-card info-section">
+                <h3>Informations</h3>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <strong>Adresse</strong>
+                        <p>12 Avenue de la Fauvette<br>94800 Villejuif</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text">
+                        <strong>Email</strong>
+                        <p>admission@efrei.fr</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text">
+                        <strong>Téléphone</strong>
+                        <p>+33 1 46 77 00 00</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-text">
+                        <strong>Horaires & Admissions</strong>
+                        <p>Lun - Ven : 9h00 - 18h00</p>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1850.6075098194385!2d2.3629656404497554!3d48.788738695490586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673e24e04a9c3%3A0xc55cb3e676f95321!2sEfrei!5e1!3m2!1sfr!2sfr!4v1778251300579!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Efrei - Informatique</p>
+        <div style="margin-top: 15px;">
+            <a href="./a-propos.html" class="btn-outline" style="display: inline-block;">À propos</a>
+        </div>
+    </footer>
+
+    <!-- Fenêtre du Chatbot -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <h4>Chatbot EFREI</h4>
+            <button id="chatClose" title="Fermer">-</button>
+        </div>
+        <div class="chat-window">
+            <div class="input-bar">
+                <input type="text" id="chatInput" placeholder="Posez vos questions">
+                <button id="chatSend" title="Envoyer"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/chatbot.js"></script>
+</body>
+
+</html>

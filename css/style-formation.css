@@ -1,0 +1,101 @@
+/* LAYOUT PRINCIPAL */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+/* GRID DES CARTES BACHELORS */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.card {
+    background: #FFFFFF;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(10, 49, 108, 0.08);
+    border-bottom: 4px solid #0A316C;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-bottom-color: #81ECEC;
+}
+
+.card h3 {
+    color: #0A316C;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.tags span {
+    display: inline-block;
+    background-color: #f4f5f7;
+    color: #0A316C;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* SECTION INGE */
+.ingenieur-section {
+    background-color: #0A316C;
+    border-radius: 12px;
+    padding: 50px;
+    color: #FFFFFF;
+    box-shadow: 0 15px 35px rgba(10, 49, 108, 0.15);
+    border-left: 8px solid #FDCB6E;
+}
+
+.ingenieur-section h2 {
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.ingenieur-section p {
+    color: #e0e6ed;
+    max-width: 800px;
+}
+
+/* LISTES DE LA CHARTE */
+ul.charter-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+ul.charter-list li {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+ul.charter-list li::before {
+    content: '▶';
+    color: #FFFFFF;
+    margin-right: 15px;
+    font-size: 10px;
+}
