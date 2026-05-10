@@ -14,7 +14,7 @@ En fouillant dans les dossiers, vous croiserez des fichiers avec "ANCIEN" dans l
 Vous remarquerez peut-être qu'il y a relativement peu de commits sur ce dépôt. C'est parce que nous avons réalisé la grande majorité du projet en travaillant en simultané grâce à "Live Share" de VS Code. Le code a donc été écrit à plusieurs en temps réel plutôt que via des pushs séparés réguliers.
 
 ## Fonctionnalités principales
-* Design Responsive : Le site s'affiche bien sur PC comme sur mobile.
+* Design Responsive : Le site s'affiche sur PC comme sur mobile.
 * Carrousel d'images : Défilement dynamique sur la page d'accueil.
 * Chatbot intégré : Un chatbot codé en JS pour répondre aux questions.
 * Carte interactive : Intégration d'une carte Google Maps sur la page Contact.
@@ -26,7 +26,7 @@ Vous remarquerez peut-être qu'il y a relativement peu de commits sur ce dépôt
 * /img : Les photos et logos utilisés.
 
 ## Améliorations possibles
-* Si nous avions eu plus de temps, voici ce que nous aurions aimé ajouter :
+Si nous avions eu plus de temps, voici ce que nous aurions aimé ajouter :
 * Un vrai backend (PHP ou base de données) pour rendre le formulaire de contact 100% fonctionnel.
 * Un mode sombre (Dark Mode).
 * Des animations d'apparition au défilement de la page.
